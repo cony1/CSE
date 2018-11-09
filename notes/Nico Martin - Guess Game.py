@@ -10,7 +10,9 @@ elif guess < random.radint(1,10):
 
 else:
     print ("Correct")
+
+
 guesses_left = 5
 playing = True
 while guesses_left > 0 and playing:
-    guess = input   
+    guess = input
