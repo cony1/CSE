@@ -2,13 +2,20 @@ import random
 r = random.randint(1, 10)
 print("Guess a random number. You 5 guess's to find out")
 guess = 5
+playing = True
 
-if guess > random.randint(1, 10):
-    print("Lower")
 
-elif guess < random.randint(1, 10):
-    print("Greater")
+while guess_left > 0 and playing:
+   guess = int(input("Guess="))
 
+   if guess > r:
+   print("Lower")
+    guesses_left = guesses_left -10
+   |7
+
+elif guess > r:
+   print("Greater")
+    guesses_left = guesses_left -1
 else:
     print("Correct")
 
