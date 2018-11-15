@@ -9,7 +9,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/notes$Nico_Martin___Guess_Game.coverage" NAME="Nico Martin - Guess Game Coverage Results" MODIFIED="1542216673617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Nico_Martin___Guess_Game.coverage" NAME="Nico Martin - Guess Game Coverage Results" MODIFIED="1542302801996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Nico_Martin___Mad_Lib.coverage" NAME="Nico Martin - Mad Lib Coverage Results" MODIFIED="1540575296769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$hello_world.coverage" NAME="hello world Coverage Results" MODIFIED="1541004150726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -17,7 +17,8 @@
     <session id="-1377974038">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.38" value="2" />
@@ -31,27 +32,29 @@
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.64" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4236" />
+          <entry key="py" value="4248" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4236" />
+          <entry key="Python" value="4248" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="pstat" value="1" />
           <entry key="py" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Profiler Session" value="1" />
           <entry key="Python" value="4" />
         </counts>
       </usages-collector>
@@ -66,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hello world.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="141" column="21" lean-forward="true" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
+            <state relative-caret-position="2397">
+              <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
               <folding>
                 <marker date="1541088383545" expanded="true" signature="1318:1319" ph="..." />
                 <marker date="1541088383545" expanded="true" signature="1318:1323" ph="..." />
@@ -80,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Nico Martin - Guess Game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="442">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -139,6 +142,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -150,7 +154,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -268,20 +271,21 @@
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5046296" side_tool="true" weight="0.204236" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49537036" visible="true" weight="0.22541603" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49537036" visible="true" weight="0.22844176" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.29180327" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.29180327" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.46721312" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015129" side_tool="true" weight="0.46721312" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3295082" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3295082" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -296,6 +300,18 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/hello world.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2397">
+          <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
+          <folding>
+            <marker date="1541088383545" expanded="true" signature="1318:1319" ph="..." />
+            <marker date="1541088383545" expanded="true" signature="1318:1323" ph="..." />
+            <marker date="1541088383545" expanded="true" signature="2089:2094" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Lucky 7.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -306,22 +322,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello world.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="141" column="21" lean-forward="true" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
-          <folding>
-            <marker date="1541088383545" expanded="true" signature="1318:1319" ph="..." />
-            <marker date="1541088383545" expanded="true" signature="1318:1323" ph="..." />
-            <marker date="1541088383545" expanded="true" signature="2089:2094" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Nico Martin - Guess Game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="442">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>

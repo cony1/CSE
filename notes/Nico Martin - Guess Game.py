@@ -9,7 +9,7 @@ while guess_left > 0 and playing:
    guess = int(input("Guess="))
 
    if guess > r:
-   print("Lower")
+     print("Lower")
     guesses_left = guesses_left -10
    |7
 
@@ -23,3 +23,4 @@ guesses_left = 5
 playing = True
 while guesses_left > 0 and playing:\
     guess = input
+
