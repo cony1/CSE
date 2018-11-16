@@ -5,22 +5,27 @@ guess = 5
 playing = True
 
 
-while guess_left > 0 and playing:
+while guess > 0 and playing:
    guess = int(input("Guess="))
 
    if guess > r:
      print("Lower")
-    guesses_left = guesses_left -10
-   |7
+     guess = guess - 1
 
-elif guess > r:
-   print("Greater")
-    guesses_left = guesses_left -1
-else:
-    print("Correct")
 
-guesses_left = 5
+else :guess < r
+print("Greater")
+    guess = guess - 1
+
+else
+     print("Correct")
+     playing = false
+
+    if guess == 0:
+        print("Try Again")
+
+guess = 5
 playing = True
-while guesses_left > 0 and playing:\
+while guess > 0 and playing:\
     guess = input
 
