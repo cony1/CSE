@@ -61,7 +61,7 @@ This is a multi-line comment
 Anything between the "s is not run.
 """
 
-
+""""
 #functions
 def say_it():
     print("Hello World!")
@@ -106,7 +106,7 @@ a = 1
 while a < 10:
     print(a)
     a += 2  # This is the same as saying a = a + 1
-
+"""
 
 """
 At the moment you start the loop:
@@ -146,7 +146,44 @@ print (5 > 3)
 print (5 >= 3)
 print (3 == 3)
 print (3 != 4)
-"""
+
 a = 3 # A is set to 3
 a == 3 #Is a equal to 3?
+
+
+# Creating a list
+colors = ["blue", "turquoise", "pink", "orange", "black", "red"] # USE SQUARE BRACKETS
+print(colors)
+print(colors[1])
+print(colors[0])
+
+# Length of the list
+print("There are %d things in the list." % len(colors))
+
+# Changing Elements in a list
+colors[1] = "Green"
+print(colors)
+
+# Looping through lists
+for item in colors:
+    print(item)
+
 """
+1. Make a list with 7 items
+2. change the 3rd thing in the list
+3. print the item
+4. print the full list
+"""
+
+
+
+new_list = ["eggs", "cheese", "oranges", "raspherries"]
+new_list[2] = "Bacon"
+printer(new_list)
+print("The last thing in the list is %s" % new_list[len(new_list) - 1])
+
+# Slicing a list
+print(new_list[1:3])
+print(new_list[1:4])
+print(new_list[1:])
+print(new_list[1:4])
