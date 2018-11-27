@@ -176,7 +176,7 @@ for item in colors:
 """
 
 
-
+"""
 new_list = ["eggs", "cheese", "oranges", "raspherries"]
 new_list[2] = "Bacon"
 printer(new_list)
@@ -187,3 +187,63 @@ print(new_list[1:3])
 print(new_list[1:4])
 print(new_list[1:])
 print(new_list[1:4])
+"""
+
+food_list = ["pissa", "tamales", "tacos", "pie", "enchiladas", "burrito",
+             "sushi", "poke", "flan", "poutine", "noodles", "chicken",
+             "chili", "Hot wings", "salmon", "chips", "lasagna", "soup",
+             "fettuccine", "salad",]
+print(len(food_list))
+
+# Adding stuff to a list
+food_list.append("bacon")
+food_list.append("eggs")
+# Notice that everything is object.method(parameters
+print(food_list)
+
+food_list.insert(1, "eggo waffles")
+print(food_list)
+
+# Removing things from a list
+food_list.remove("salad")
+print(food_list)
+
+"""
+1. make a new list
+2. add a 4th item to the list
+3. Remove one of the first three items
+"""
+games = ["Battlefield", "Black Ops 4", "Fifa 19"]
+print(games)
+games.append ["God of War"]
+games.remove ["Battlefield"]
+# Tuples
+brands = ("apple", "samsung", "HTC") # Notice the parentheses
+
+# Also removing stuff from a list
+print(food_list)
+food_list.pop(0)
+print(food_list)
+
+# Find the index of an item
+print(food_list.imdex("chicken"))
+
+# Changing things into a list
+string1 = "turquoise"
+list1 = list(string1)
+print(list1)
+
+# turn a list into a string
+print("".join(list1))
+
+for i in range(len(list)):  # i goes through all indicies
+    if list1.pop(i):  # remove the i-th index
+        list1.insert(1, "*") # Put a * there instead
+"""
+for character in list1:
+if character == "u":
+# replace with a *
+current_indexx = list1.index(character)
+list1.pop(current_index)
+list1.insert(current_index, "*"
+"""
