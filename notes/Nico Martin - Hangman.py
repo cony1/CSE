@@ -9,5 +9,8 @@ print(hangman_list)
 
 print (len(hangman_list))
 
-if len == 5:
-    print("[],[],[],[],[],")
+import string
+
+print(list(string.ascii_letters))
+print(string.digits)
+print(string.punctuation)
