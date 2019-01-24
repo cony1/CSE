@@ -14,3 +14,7 @@ print(answer)
 
 input(letters_guessed)
 
+for * in range (word_list):
+    output.append
+
+win =
