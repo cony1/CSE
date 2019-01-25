@@ -1,12 +1,12 @@
 import random
 import string
 
-word_list = ["Camera", "Games", "PS4", "XBox", "iPhone", "Android", "Tablet", "Car", "Computer", "Tv"]
+words = ["Camera", "Games", "PS4", "XBox", "iPhone", "Android", "Tablet", "Car", "Computer", "Tv"]
 
 guesses = 8
 letters_guessed = []
 
-answer = random.choice(word_list)
+answer = random.choice(words)
 print(answer)
 
 # print(list(string.ascii_letters))
@@ -14,7 +14,3 @@ print(answer)
 
 input(letters_guessed)
 
-for * in range (word_list):
-    output.append
-
-win =
