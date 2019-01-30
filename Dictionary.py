@@ -15,7 +15,7 @@ complex_dictionary = {
         "CITIES": [
             "Fresno",
             "San Francisco",
-            "Los Angees"
+            "Los Angeles"
         ]
     },
     "FL": {
@@ -55,3 +55,20 @@ georgia = complex_dictionary["GA"]
 print(georgia)
 
 print(complex_dictionary["AK"]["CITIES"][0])
+
+print(complex_dictionary.keys())
+print(complex_dictionary.items())
+
+for key, value in complex_dictionary.items():
+    print(key)
+    print(value)
+    print("-" * 20)
+
+    # This is what makes it look pretty
+print()
+for state, info in complex_dictionary.items():
+    for label, stats in info.items():
+        print(label)
+        print(stats)
+        print("-" * 20)
+    print("=" * 20)
