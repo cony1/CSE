@@ -13,8 +13,13 @@ output = []
 for i in range(len(answer)):
     output.append("*")
 print("".join(output))
-print(random.choice)
-input("Type in a letter: ")
+
+print(answer)
+
+input("Type in a letter:")
+
+if answer is letters_guessed:
+    input("Try again:")
+
 # print(list(string.ascii_letters))
 # print(string.punctuation)
-
