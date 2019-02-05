@@ -7,19 +7,31 @@ guesses = 8
 letters_guessed = []
 
 answer = random.choice(words)
+letters_in_answer = list(answer)
 # print(answer)
 output = []
 
 for i in range(len(answer)):
     output.append("*")
-print("".join(output))
 
 print(answer)
+while guesses > 0:
+    print(letters_in_answer)
+    print("".join(output))
 
-input("Type in a letter:")
+    current_guess = input("Type in a letter:")
+    letters_guessed.append(current_guess)
+    if current_guess in answer:
+        print("Correct!")
+    else:
+        print("Nope.")
+        guesses -= 1
 
-if answer is letters_guessed:
-    input("Try again:")
+    if answer is letters_in_answer:
+        print(letters_in_answer)
+
+    else:
+        print("")
 
 # print(list(string.ascii_letters))
 # print(string.punctuation)
