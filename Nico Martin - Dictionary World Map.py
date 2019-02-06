@@ -1,6 +1,6 @@
 world_map = {
     'R19A': {
-        'NAME': "Mr. Wiebe's Room",
+        'NAME': "",
         'DESCRIPTION': "This is the classroom you are in right now."
                        "There are two doors on the north wall",
         'PATHS': {
