@@ -1,19 +1,21 @@
 world_map = {
-    'R19A': {
-        'NAME': "",
-        'DESCRIPTION': "This is the classroom you are in right now."
-                       "There are two doors on the north wall",
+    'ROOM 1': {
+        'NAME': "Nacht Der Untoten",
+        'DESCRIPTION': ""
+                       "",
         'PATHS': {
-            'NORTH': "PARKING_LOT"
+            'NORTH': "Veruckt",
+            'EAST': "Shi No Numa",
         }
     },
-        'PARKING_LOT': {
-        'NAME': "The North Parking Lot",
+    'ROOM 2': {
+        'NAME': "Veruckt",
         'DESCRIPTION': "There are a couple cars parked here",
         'PATHS': {
-            'SOUTH': 'R19A'
+            'NORTH': 'Ascension',
+            'SOUTH': 'Nacht Der Untoten',
         }
-    }
+    },
 }
 
 # Controller
