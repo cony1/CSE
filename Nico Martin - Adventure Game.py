@@ -94,9 +94,60 @@ world_map = {
         'DESCRIPTION': ""
                        "",
         'PATHS': {
-            'NORTH': "PARKING_LOT"
+            'NORTH': "Middle Of a Rift 2",
         }
     },
+    'EX ROOM 2': {
+        'NAME': "Middle Of A Rift 2",
+        'DESCRIPTION': ""
+                       "",
+        'PATHS': {
+            'EAST': "Dead Of The Night",
+            'WEST': "Blood OF THe Dead",
+        }
+    },
+    'ROOM 11': {
+        'NAME': "Dead Of The Night",
+        'DESCRIPTION': ""
+                       "",
+        'PATHS': {
+            'NORTH': "Voyage Of Despair",
+        }
+    },
+    'ROOM 12': {
+        'NAME': "Blood OF The Dead",
+        'DESCRIPTION': ""
+                       "",
+        'PATHS': {
+            'NORTH': "Voyage OF Despair",
+        }
+    },
+    'ROOM 13': {
+        'NAME': "Voyage Of Despair",
+        'DESCRIPTION': ""
+                       "",
+        'PATHS': {
+            'NORTH': "IX",
+        }
+    },
+    'ROOM 14': {
+        'NAME': "IX",
+        'DESCRIPTION': ""
+                       "",
+        'PATHS': {
+            'EAST': "Classified",
+        }
+    },
+
+
+
+
+
+
+
+
+
+
 
 }
 
