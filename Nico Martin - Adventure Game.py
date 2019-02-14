@@ -1,50 +1,58 @@
 world_map = {
-    'ROOM 1': {
+    'ROOM_1': {
         'NAME': "Nacht Der Untoten",
-        'DESCRIPTION': ""
-                       "",
+        'DESCRIPTION': "You are in a room that is very small, some windows have barriers."
+                       "In the distance you see two weird looking portals one heading North, and the other heading East",
         'PATHS': {
-            'NORTH': "Veruckt",
-            'EAST': "Shi No Numa",
+            'NORTH': "ROOM_2",
+            'EAST': "ROOM_3",
         }
     },
-    'ROOM 2': {
+    'ROOM_2': {
         'NAME': "Veruckt",
-        'DESCRIPTION': "There are a couple cars parked here",
+        'DESCRIPTION': "You are in a building with screams coming out of every corner of the room"
+                       "There are three weird looking portals"
+                       "One is heading North, and the other is heading South"
+                       "There is one that you have a weird felling about.",
         'PATHS': {
             'NORTH': "Ascension",
             'EAST': "Middle Of A Rift",
             'SOUTH': 'Nacht Der Untoten',
         }
     },
-    'ROOM 3': {
+    'ROOM_3': {
         'NAME': "Shi No Numa",
-        'DESCRIPTION': ""
-                       "",
+        'DESCRIPTION': "You are in a swamp with screams coming out of every corner of the room"
+                       "There are two weird looking portals"
+                       "One is heading West, and the other is heading East.",
         'PATHS': {
             'WEST': "Nacht Der Untoten",
             'EAST': "Kino Der Toten",
         }
     },
-    'EX ROOM 1': {
+    'EX_ROOM_1': {
         'NAME': "Middle Of A Rift",
-        'DESCRIPTION': ""
-                       "",
+        'DESCRIPTION': "You are felling very sick"
+                       "There are weird lights from every corner of the room"
+                       "You see tree ways to escape"
+                       "One way is heading West, another way is East, and the other way is South."
+                       "You hear moneys and drums coming from the East",
         'PATHS': {
             'WEST': "Verruckt",
             'EAST': "Shangrila",
             'SOUTH': "Shi No Numa",
         }
     },
-    'ROOM 4': {
+    'ROOM_4': {
         'NAME': "Kino Der Toten",
-        'DESCRIPTION': ""
-                       "",
+        'DESCRIPTION': "You are in a theater... you hear music and screams everywhere"
+                       "There is only one weird portal"
+                       "It is heading West",
         'PATHS': {
             'WEST': "Shi No Numa",
         }
     },
-    'ROOM 5': {
+    'ROOM_5': {
         'NAME': "Ascension",
         'DESCRIPTION': ""
                        "",
@@ -53,7 +61,7 @@ world_map = {
             'SOUTH': "Verruckt",
         }
     },
-    'ROOM 6': {
+    'ROOM_6': {
         'NAME': "Shangrila",
         'DESCRIPTION': ""
                        "",
@@ -62,7 +70,7 @@ world_map = {
             'EAST': "Middle Of A Rift",
         }
     },
-    'ROOM 7': {
+    'ROOM_7': {
         'NAME': "Moon",
         'DESCRIPTION': ""
                        "",
@@ -71,7 +79,7 @@ world_map = {
             'SOUTH': "Shangrila",
         }
     },
-    'ROOM 8': {
+    'ROOM_8': {
         'NAME': "Nuketown",
         'DESCRIPTION': ""
                        "",
@@ -80,7 +88,7 @@ world_map = {
             'WEST': "Tranzit",
         }
     },
-    'ROOM 9': {
+    'ROOM_9': {
         'NAME': "Tranzit",
         'DESCRIPTION': ""
                        "",
@@ -89,7 +97,7 @@ world_map = {
             'EAST': "Nuketown",
         }
     },
-    'ROOM 10': {
+    'ROOM_10': {
         'NAME': "Origins",
         'DESCRIPTION': ""
                        "",
@@ -97,7 +105,7 @@ world_map = {
             'NORTH': "Middle Of a Rift 2",
         }
     },
-    'EX ROOM 2': {
+    'EX_ROOM_2': {
         'NAME': "Middle Of A Rift 2",
         'DESCRIPTION': ""
                        "",
@@ -106,7 +114,7 @@ world_map = {
             'WEST': "Blood OF THe Dead",
         }
     },
-    'ROOM 11': {
+    'ROOM_11': {
         'NAME': "Dead Of The Night",
         'DESCRIPTION': ""
                        "",
@@ -114,7 +122,7 @@ world_map = {
             'NORTH': "Voyage Of Despair",
         }
     },
-    'ROOM 12': {
+    'ROOM_12': {
         'NAME': "Blood OF The Dead",
         'DESCRIPTION': ""
                        "",
@@ -122,7 +130,7 @@ world_map = {
             'NORTH': "Voyage OF Despair",
         }
     },
-    'ROOM 13': {
+    'ROOM_13': {
         'NAME': "Voyage Of Despair",
         'DESCRIPTION': ""
                        "",
@@ -130,8 +138,16 @@ world_map = {
             'NORTH': "IX",
         }
     },
-    'ROOM 14': {
+    'ROOM_14': {
         'NAME': "IX",
+        'DESCRIPTION': ""
+                       "",
+        'PATHS': {
+            'EAST': "Classified",
+        }
+    },
+    'ROOM_15': {
+        'NAME': "Classified",
         'DESCRIPTION': ""
                        "",
         'PATHS': {
@@ -153,7 +169,7 @@ world_map = {
 
 # Controller
 playing = True
-current_node = world_map['ROOM 1']
+current_node = world_map['ROOM_1']
 directions = ['NORTH', 'SOUTH', 'EAST', 'WEST', 'UP', 'DOWN']
 
 while playing:
