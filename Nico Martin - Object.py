@@ -6,4 +6,9 @@ class Computer (object):
 
         self.screen
         self.keyboard
-        self.
+        self.touchpad
+        self.power_button
+        self.battery
+
+    def use_Comuter(self):
+        if
