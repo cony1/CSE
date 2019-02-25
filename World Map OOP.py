@@ -1,5 +1,5 @@
 class Room(object):
-    def __init__(self, name, north=None, south=None, east=None west=None):
+    def __init__(self, name, north=None, south=None, east=None, west=None):
         self.name = name
         self.north = north
         self.south = south
@@ -19,8 +19,8 @@ parking_lot = Room("Parking Lot", None, R19A)
 
 
 ROOM_1 = Room("Nacht Der Untoten", "Veruckt")
-ROOM_2 = Room("Veruckt")
-ROOM_3 = Room("")
+ROOM_2 = Room("Veruckt", "Ascension", "Middle Of A Rift", "Nacht Der Untoten")
+ROOM_3 = Room("Shi No Numa", "Nacht Der Untoten",)
 EX_ROOM_1 = Room("")
 ROOM_4 = Room("")
 ROOM_5 = Room("")
