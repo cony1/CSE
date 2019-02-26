@@ -6,6 +6,28 @@ class Room(object):
         self.east = east
         self.west = west
 
+class PLayer(object):
+    def __init__(self, starting_location):
+        self.current_location = starting_location
+        self.inventory = []
+
+    def move(self, new_location):
+        """This moves the player to a new room
+
+        :param new_location: The room object of which you are going to
+        """
+        self.current_location = new_location
+
+
+def find_next_room(self, direction):
+    """This method searches the current room so see if a room exists in the direction
+
+    :param direction: The direction the you want to move
+    :return:
+    """
+    name_of_room = getattr(self.current_location, direction)
+    return globals()[name_of_room]
+
 
 # Option 1 - Define as we go
 R19A = Room("Mr. Wiebe's Room", parking_lot)
@@ -16,6 +38,29 @@ R19A.north = Room("Parking Lot", None, R19A)
 # Option 2 - Set all at once, modify controller
 R19A = Room("Mr. Viebe's Room", 'parking_lot')
 parking_lot = Room("Parking Lot", None, R19A)
+
+player = PLayer(R19A)
+
+playing = True
+directions = ['north', 'south', 'east', 'west']
+
+while playing:
+    print(player.current_location.name)
+    print(player.current_location.description)
+    command = input(">_")
+    if command.lower() in ['q', 'quit', 'exit']:
+        playing = False
+    elif command.upper in directions:
+        try:
+            room_name = current_node['PATHS'][command.upper()]
+            player.move(next_room)
+        except KeyError:
+            print("I can't go that way")
+    else:
+        print("Command Not Found")
+
+
+
 
 
 ROOM_1 = Room("Nacht Der Untoten", "Veruckt")
