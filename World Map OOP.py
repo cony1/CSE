@@ -1,12 +1,15 @@
 class Room(object):
-    def __init__(self, name, north=None, south=None, east=None, west=None):
+    def __init__(self, name, north=None, south=None, east=None, west=None, description=""):
         self.name = name
         self.north = north
-        self.south = south
-        self.east = east
+        self.south = east
+        self.east = south
         self.west = west
+        self.description = description
+        self.characters = []
 
-class PLayer(object):
+
+class Player(object):
     def __init__(self, starting_location):
         self.current_location = starting_location
         self.inventory = []
@@ -18,31 +21,24 @@ class PLayer(object):
         """
         self.current_location = new_location
 
+    def find_next_room(self, direction):
+        """This method searches the current room so see if a room exists in the direction
 
-def find_next_room(self, direction):
-    """This method searches the current room so see if a room exists in the direction
+        :param direction: The direction the you want to move
+        :return:
+        """
+        name_of_room = getattr(self.current_location, direction)
+        return globals()[name_of_room]
 
-    :param direction: The direction the you want to move
-    :return:
-    """
-    name_of_room = getattr(self.current_location, direction)
-    return globals()[name_of_room]
-
-
-# Option 1 - Define as we go
-R19A = Room("Mr. Wiebe's Room", parking_lot)
-parking_lot = Room("Parking LOt", None, R19A)
-
-R19A.north = Room("Parking Lot", None, R19A)
 
 # Option 2 - Set all at once, modify controller
 R19A = Room("Mr. Viebe's Room", 'parking_lot')
 parking_lot = Room("Parking Lot", None, R19A)
 
-player = PLayer(R19A)
+player = Player(R19A)
 
 playing = True
-directions = ['north', 'south', 'east', 'west']
+directions = ['north', 'east', 'south', 'west']
 
 while playing:
     print(player.current_location.name)
@@ -50,9 +46,9 @@ while playing:
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
-    elif command.upper in directions:
+    elif command.lower() in directions:
         try:
-            room_name = current_node['PATHS'][command.upper()]
+            next_room = player.find_next_room(command)
             player.move(next_room)
         except KeyError:
             print("I can't go that way")
@@ -63,7 +59,7 @@ while playing:
 
 
 
-ROOM_1 = Room("Nacht Der Untoten", "Veruckt")
+ROOM_1 = Room("Nacht Der Untoten", "Veruckt", "Shi No Numa", None, None)
 ROOM_2 = Room("Veruckt", "Ascension", "Middle Of A Rift", "Nacht Der Untoten")
 ROOM_3 = Room("Shi No Numa", "Nacht Der Untoten",)
 EX_ROOM_1 = Room("")
@@ -80,3 +76,4 @@ ROOM_12 = Room("")
 ROOM_13 = Room("")
 ROOM_14 = Room("")
 ROOM_15 = Room("")
+
