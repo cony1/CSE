@@ -36,7 +36,7 @@
     <session id="2047748420">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="35" />
+          <entry key="project.closed" value="36" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.102" value="1" />
           <entry key="project.open.time.15" value="1" />
@@ -45,7 +45,7 @@
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.36" value="5" />
-          <entry key="project.open.time.38" value="4" />
+          <entry key="project.open.time.38" value="5" />
           <entry key="project.open.time.42" value="4" />
           <entry key="project.open.time.43" value="2" />
           <entry key="project.open.time.45" value="1" />
@@ -58,27 +58,27 @@
           <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.79" value="1" />
           <entry key="project.open.time.82" value="1" />
-          <entry key="project.opened" value="36" />
+          <entry key="project.opened" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="15" />
+          <entry key="py" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="15" />
+          <entry key="Python" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="14009" />
+          <entry key="py" value="14144" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="14009" />
+          <entry key="Python" value="14144" />
         </counts>
       </usages-collector>
     </session>
@@ -138,7 +138,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/World Map OOP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
+            <state relative-caret-position="935">
               <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
               <folding>
                 <marker date="1551289274853" expanded="true" signature="19:24" ph="..." />
@@ -150,13 +150,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inheritance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+            <state relative-caret-position="221">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
               <folding>
-                <marker date="1551375790058" expanded="true" signature="22:27" ph="..." />
-                <marker date="1551375790058" expanded="true" signature="98:103" ph="..." />
-                <marker date="1551375790058" expanded="true" signature="671:676" ph="..." />
-                <marker date="1551375790058" expanded="true" signature="772:844" ph="..." />
+                <marker date="1551464680513" expanded="true" signature="22:27" ph="..." />
+                <marker date="1551464680513" expanded="true" signature="98:103" ph="..." />
+                <marker date="1551464680513" expanded="true" signature="671:676" ph="..." />
+                <marker date="1551464680513" expanded="true" signature="772:844" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Item.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+              <folding>
+                <marker date="1551465417062" expanded="true" signature="19:24" ph="..." />
               </folding>
             </state>
           </provider>
@@ -209,6 +221,7 @@
         <option value="$PROJECT_DIR$/Nico Martin - Adventure Game.py" />
         <option value="$PROJECT_DIR$/World Map OOP.py" />
         <option value="$PROJECT_DIR$/inheritance.py" />
+        <option value="$PROJECT_DIR$/Item.py" />
       </list>
     </option>
   </component>
@@ -229,6 +242,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,7 +263,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -415,7 +428,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49633253" visible="true" weight="0.26399395" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49633253" visible="true" weight="0.2677761" />
       <window_info id="Structure" order="1" sideWeight="0.5036675" side_tool="true" weight="0.26172465" />
       <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.25718608" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -521,6 +534,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/World Map OOP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+          <folding>
+            <marker date="1551289274853" expanded="true" signature="19:24" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Special_Random.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -539,25 +562,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/World Map OOP.py">
+    <entry file="file://$PROJECT_DIR$/Item.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+        <state relative-caret-position="85">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding>
-            <marker date="1551289274853" expanded="true" signature="19:24" ph="..." />
+            <marker date="1551465417062" expanded="true" signature="19:24" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inheritance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        <state relative-caret-position="221">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding>
-            <marker date="1551375790058" expanded="true" signature="22:27" ph="..." />
-            <marker date="1551375790058" expanded="true" signature="98:103" ph="..." />
-            <marker date="1551375790058" expanded="true" signature="671:676" ph="..." />
-            <marker date="1551375790058" expanded="true" signature="772:844" ph="..." />
+            <marker date="1551464680513" expanded="true" signature="22:27" ph="..." />
+            <marker date="1551464680513" expanded="true" signature="98:103" ph="..." />
+            <marker date="1551464680513" expanded="true" signature="671:676" ph="..." />
+            <marker date="1551464680513" expanded="true" signature="772:844" ph="..." />
           </folding>
         </state>
       </provider>
