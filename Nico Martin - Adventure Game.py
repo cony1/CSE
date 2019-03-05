@@ -1,8 +1,14 @@
 world_map = {
     'NACHT_DER_UNTOTEN_ROOM_1': {
         'NAME': "Nacht Der Untoten",
-        'DESCRIPTION': "You are in a room that is very small, some windows have barriers."
-                       "In the distance you see two weird looking portals one heading North, and the other heading East",
+        'DESCRIPTION': "╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱\n"
+                       "╱╱┏╮╱╱╱╱╱╱╱╱╱╱╱\n"
+                       "╱╱┃┃╱╱╱┳╱┓┳╭┫┳┓\n"
+                       "\n"
+                       "\n"
+                       "\n"
+                       "\n"
+                       "\n",
         'PATHS': {
             'NORTH': "VERUCKT_ROOM_2",
             'EAST': "SHI_NO_NUMA_ROOM_3",
@@ -169,7 +175,7 @@ world_map = {
 
 # Controller
 playing = True
-current_node = world_map['ROOM_1']
+current_node = world_map['NACHT_DER_UNTOTEN_ROOM_1']
 directions = ['NORTH', 'EAST', 'SOUTH', 'WEST', 'UP', 'DOWN']
 
 while playing:
