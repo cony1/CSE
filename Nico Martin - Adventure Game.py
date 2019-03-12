@@ -1,14 +1,15 @@
 world_map = {
     'NACHT_DER_UNTOTEN_ROOM_1': {
         'NAME': "Nacht Der Untoten",
-        'DESCRIPTION': "------------------------\n"
-                       " 🕷[Nacht Der Untoten}🕷 \n"
-                       "   ------------------   \n"
-                       "                        \n"
-                       "         ✉              \n"
-                       "                         \n"
-                       "                🚶‍        \n"
-                       "------------------------\n",
+        'DESCRIPTION':  "You are in a building, you see an envelope "
+                        "------------------------\n"
+                        " 🕷[Nacht Der Untoten}🕷 \n"
+                        "   ------------------   \n"
+                        "                        \n"
+                        "         ✉              \n"
+                        "                         \n"
+                        "                🚶‍        \n"
+                        "------------------------\n",
         'PATHS': {
             'NORTH': "VERUCKT_ROOM_2",
             'EAST': "SHI_NO_NUMA_ROOM_3",
