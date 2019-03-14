@@ -94,3 +94,13 @@ class Key (Household):
 class Envelope (Household):
     def __init__(self):
         super(Envelope, self).__init__("Envelope",)
+
+
+class Character(object):
+    def __init__(self, name, health: int, weapon, armor):
+        self.name = name
+        self.health = health
+        self.weapon = weapon
+        self.armor = armor
+
+    def take_damage
