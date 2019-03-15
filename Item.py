@@ -27,7 +27,7 @@ class Boots1 (Armor):
 class Weapon(Item):
     def __init__(self, name, attack):
         super(Weapon, self).__init__(name)
-        self.attack = attack
+        self.attack = attackwq
 
 
 class Gun1 (Weapon):
@@ -94,6 +94,16 @@ class Key (Household):
 class Envelope (Household):
     def __init__(self):
         super(Envelope, self).__init__("Envelope",)
+
+
+class Consumable (Item):
+    def __init__(self, name):
+        super(Consumable, self).__init__(name)
+
+
+class Pizza (Consumable):
+    def __init__(self):
+        super(Pizza, self).__init__("Pizza")
 
 
 class Character(object):
