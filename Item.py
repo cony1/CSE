@@ -113,4 +113,22 @@ class Character(object):
         self.weapon = weapon
         self.armor = armor
 
-    def take_damage
+    def take_damage(self, damage: int):
+        if self.armor.protechion > damage:
+            print("You survived the attack!")
+        else:
+            self.health -= damage - self.armor.protection
+            if self.health <= 0:
+                print("%s has died" % self.name)
+                self.health = 0
+        print("%d has %d heal left" % (self.name, self.health))
+
+    def attack(self, target):
+        print("%s attacks %s  for %d damage" % (self.name, target.name, self.weapon. damage))
+
+    def death(self):
+        if self.health >= 0:
+            print("You have died!")
+
+
+# Items
