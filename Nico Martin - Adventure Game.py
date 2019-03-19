@@ -130,7 +130,7 @@ world_map = {
         }
     },
     'BLOOD_OF_THE_DEAD_ROOM_12': {
-        'NAME': "Blood OF The Dead",
+        'NAME': "Blood Of The Dead",
         'DESCRIPTION': ""
                        "",
         'PATHS': {
@@ -158,9 +158,18 @@ world_map = {
         'DESCRIPTION': ""
                        "",
         'PATHS': {
-            'EAST': "Classified",
+            'EAST': "HOME_ROOM_16",
         }
     },
+    'HOME_ROOM_16': {
+        'NAME': "Home",
+        'DESCRIPTION': ""
+                       "",
+        'PATHS': {
+            'EAST': "",
+        }
+    },
+
 
 
 

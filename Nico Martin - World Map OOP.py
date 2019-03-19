@@ -1,5 +1,5 @@
 class Room(object):
-    def __init__(self, name, north=None, south=None, east=None, west=None, description=""):
+    def __init__(self, name, north=None, east=None, south=None, west=None, description=""):
         self.name = name
         self.north = north
         self.south = east
@@ -56,24 +56,21 @@ while playing:
         print("Command Not Found")
 
 
-
-
-
-ROOM_1 = Room("Nacht Der Untoten", "Veruckt", "Shi No Numa", None, None)
-ROOM_2 = Room("Veruckt", "Ascension", "Middle Of A Rift", "Nacht Der Untoten")
-ROOM_3 = Room("Shi No Numa", "Nacht Der Untoten",)
-EX_ROOM_1 = Room("")
-ROOM_4 = Room("")
-ROOM_5 = Room("")
-ROOM_6 = Room("")
-ROOM_7 = Room("")
-ROOM_8 = Room("")
-ROOM_9 = Room("")
-ROOM_10 = Room("")
-EX_ROOM_2 = Room("")
-ROOM_11 = Room("")
-ROOM_12 = Room("")
-ROOM_13 = Room("")
-ROOM_14 = Room("")
-ROOM_15 = Room("")
-
+NACHT_DER_UNTOTEN_ROOM_1 = Room("Nacht Der Untoten", 'VERUCKT_ROOM_2', 'SHI_NO_NUMA_ROOM_3', None, None),
+VERUCKT_ROOM_2 = Room("Veruckt", 'ASCENSION_ROOM_5', 'MIDDLE_OF_A_RIFT_EX_ROOM_1', 'NACHT_DER_UNTOTEN_ROOM_1', None)
+SHI_NO_NUMA_ROOM_3 = Room("Shi No Numa", None, 'KINO_DER_TOTEN_ROOM_4', None, 'NACHT_DER_UNTOTEN_ROOM_1')
+MIDDLE_OF_A_RIFT_EX_ROOM_1 = Room("Middle Of A Rift", None, 'SHANGRILA_ROOM_6', 'SHI_NO_NUMA_ROOM_3', 'VERUCKT_ROOM_2')
+KINO_DER_TOTEN_ROOM_4 = Room("Kino Der Toten", None, None, None, 'SHI_NO_NUMA_ROOM_3')
+ASCENSION_ROOM_5 = Room("Ascension", 'TRANZIT_ROOM_9', None, 'VERUCKT_ROOM_2', None)
+SHANGRILA_ROOM_6 = Room("Shangrila", 'MOON_ROOM_7', 'MIDDLE_OF_A_RIFT_EX_ROOM_1', None, None)
+MOON_ROOM_7 = Room("Moon", 'NUKETOWN_ROOM_8', None, 'SHANGRILA_ROOM_6', None)
+NUKETOWN_ROOM_8 = Room("Nuketown", 'ORIGINS_ROOM_10', None, None, 'TRANZIT_ROOM_9')
+TRANZIT_ROOM_9 = Room("Tranzit", 'ORIGINS_ROOM_10', 'NUKETOWN_ROOM_8', None, None)
+ORIGINS_ROOM_10 = Room("Origins", 'MIDDLE_OF_A_RIFT_2_EX_ROOM_2', None, None, None)
+MIDDLE_OF_A_RIFT_2_EX_ROOM_2 = Room("Middle Of a Rift 2", None, 'DEAD_OF_THE_NIGHT_ROOM_11', None, 'BLOOD_OF_THE_DEAD_ROOM_12')
+DEAD_OF_THE_NIGHT_ROOM_11 = Room("Dead Of The Night", 'VOYAGE_OF_DESPAIR_ROOM_13', None, None, None)
+BLOOD_OF_THE_DEAD_ROOM_12 = Room("Blood Of The Dead", 'VOYAGE_OF_DESPAIR_ROOM_13', None, None, None)
+VOYAGE_OF_DESPAIR_ROOM_13 = Room("Voyage of Despair", 'IX_ROOM_14', None, None, None)
+IX_ROOM_14 = Room("IX", None, 'CLASSIFIED_ROOM_15', None, None)
+CLASSIFIED_ROOM_15 = Room("Classified", None, 'HOME_ROOM_16', None, None)
+HOME_ROOM_16 = Room("Home", None, None, None, None)
