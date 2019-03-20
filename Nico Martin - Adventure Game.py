@@ -19,7 +19,7 @@ world_map = {
         'NAME': "Veruckt",
         'DESCRIPTION': "You are in a building with screams coming out of every corner of the room"
                        "There are three weird looking portals"
-                       "One is heading North, and the other is heading South"
+                       "One is heading North, and the other is heading East"
                        "There is one that you have a weird felling about.",
         'PATHS': {
             'NORTH': "ASCENSION_ROOM_5",
