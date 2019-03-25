@@ -9,19 +9,19 @@ class Armor(Item):
         self.protection = protection
 
 
-class ChestPlate1(Armor):
+class ChestPlate(Armor):
     def __init__(self):
-        super(ChestPlate1, self).__init__("Bronze Chest Plate, Protection-10", 10)
+        super(ChestPlate, self).__init__("Bronze Chest Plate, Protection-10", 10)
 
 
-class Leggings1 (Armor):
+class Leggings (Armor):
     def __init__(self):
-        super(Leggings1, self).__init__("Bronze Leggings, Protection - 10", 10)
+        super(Leggings, self).__init__("Bronze Leggings, Protection - 10", 10)
 
 
-class Boots1 (Armor):
+class Boots (Armor):
     def __init__(self):
-        super(Boots1, self).__init__("Bronze Boots, Protection - 10", 10)
+        super(Boots, self).__init__("Bronze Boots, Protection - 10", 10)
 
 
 class Weapon(Item):
@@ -30,24 +30,24 @@ class Weapon(Item):
         self.attack = attackwq
 
 
-class Gun1 (Weapon):
+class Gun (Weapon):
     def __init__(self):
         super(Gun1, self).__init__("Bronze Handgun, Attack Damage - 10", 10)
 
 
-class Crossbow1 (Weapon):
+class Crossbow (Weapon):
     def __init__(self):
-        super(Crossbow1, self).__init__("Bronze Crossbow, Attack Damage - 10", 10)
+        super(Crossbow, self).__init__("Bronze Crossbow, Attack Damage - 10", 10)
 
 
-class KitchenKnife1 (Weapon):
+class KitchenKnife (Weapon):
     def __init__(self):
-        super(KitchenKnife1, self).__init__("Bronze Kitchen Knife, Attack Damage- 10", 10)
+        super(KitchenKnife, self).__init__("Bronze Kitchen Knife, Attack Damage- 10", 10)
 
 
-class Sword1 (Weapon):
+class Sword (Weapon):
     def __init__(self):
-        super(Sword1, self).__init__("Bronze Sword, Attack Damage - 10", 10)
+        super(Sword, self).__init__("Bronze Sword, Attack Damage - 10", 10)
 
 
 class Electronic (Item):

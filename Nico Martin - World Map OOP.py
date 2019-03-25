@@ -60,6 +60,7 @@ NACHT_DER_UNTOTEN_ROOM_1 = Room("Nacht Der Untoten", 'VERUCKT_ROOM_2', 'SHI_NO_N
                                                                                                          "building, you"
                                                                                                          " see an"
                                                                                                          "envelope")
+
 VERUCKT_ROOM_2 = Room("Veruckt", 'ASCENSION_ROOM_5', 'MIDDLE_OF_A_RIFT_EX_ROOM_1', 'NACHT_DER_UNTOTEN_ROOM_1', None, "")
 SHI_NO_NUMA_ROOM_3 = Room("Shi No Numa", None, 'KINO_DER_TOTEN_ROOM_4', None, 'NACHT_DER_UNTOTEN_ROOM_1')
 MIDDLE_OF_A_RIFT_EX_ROOM_1 = Room("Middle Of A Rift", None, 'SHANGRILA_ROOM_6', 'SHI_NO_NUMA_ROOM_3', 'VERUCKT_ROOM_2')
