@@ -27,7 +27,7 @@ class Boots (Armor):
 class Weapon(Item):
     def __init__(self, name, attack):
         super(Weapon, self).__init__(name)
-        self.attack = attackwq
+        self.attack = attack
 
 
 class Gun (Weapon):

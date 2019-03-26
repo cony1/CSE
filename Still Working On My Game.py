@@ -131,7 +131,7 @@ class Character(object):
             print("You have died!")
 
 class Room(object):
-    def __init__(self, name, north=None, south=None, east=None, west=None, description=""):
+    def __init__(self, name, north, south, east, west=None, description, item):
         self.name = name
         self.north = north
         self.south = east
@@ -139,6 +139,7 @@ class Room(object):
         self.west = west
         self.description = description
         self.characters = []
+        self.item = item
 
 
 class Player(object):
@@ -215,3 +216,4 @@ envelope = Household("Envelope",)
 
 # Consumable
 pizza = Consumable("Pizza", 10)
+
