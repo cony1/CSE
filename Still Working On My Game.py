@@ -27,7 +27,7 @@ class Boots (Armor):
 class Weapon(Item):
     def __init__(self, name, attack):
         super(Weapon, self).__init__(name)
-        self.attack = attackwq
+        self.attack = attack
 
 
 class Gun (Weapon):
@@ -131,7 +131,7 @@ class Character(object):
             print("You have died!")
 
 class Room(object):
-    def __init__(self, name, north, south, east, west=None, description, item):
+    def __init__(self, name, north, south, east, west, description, item):
         self.name = name
         self.north = north
         self.south = east
@@ -167,10 +167,14 @@ class Player(object):
 NACHT_DER_UNTOTEN_ROOM_1 = Room("Nacht Der Untoten", 'VERUCKT_ROOM_2', 'SHI_NO_NUMA_ROOM_3', None, None, "You are in a"
                                                                                                          "building, you"
                                                                                                          " see an"
-                                                                                                         "envelope")
-
-VERUCKT_ROOM_2 = Room("Veruckt", 'ASCENSION_ROOM_5', 'MIDDLE_OF_A_RIFT_EX_ROOM_1', 'NACHT_DER_UNTOTEN_ROOM_1', None, "")
-SHI_NO_NUMA_ROOM_3 = Room("Shi No Numa", None, 'KINO_DER_TOTEN_ROOM_4', None, 'NACHT_DER_UNTOTEN_ROOM_1')
+                                                                                                         "envelope",
+                                Envelope())
+VERUCKT_ROOM_2 = Room("Veruckt", 'ASCENSION_ROOM_5', 'MIDDLE_OF_A_RIFT_EX_ROOM_1', 'NACHT_DER_UNTOTEN_ROOM_1', None, "You are in a building"
+                                                                                                                     "with screams coming out of "
+                                                                                                                     "every corner of the room."
+                                                                                                                     "There are three weird looking portals"
+                                                                                                                     "One is heading North, and the other is heading East"
+                                                                                                                     "")
 MIDDLE_OF_A_RIFT_EX_ROOM_1 = Room("Middle Of A Rift", None, 'SHANGRILA_ROOM_6', 'SHI_NO_NUMA_ROOM_3', 'VERUCKT_ROOM_2')
 KINO_DER_TOTEN_ROOM_4 = Room("Kino Der Toten", None, None, None, 'SHI_NO_NUMA_ROOM_3')
 ASCENSION_ROOM_5 = Room("Ascension", 'TRANZIT_ROOM_9', None, 'VERUCKT_ROOM_2', None)
@@ -202,9 +206,9 @@ sword = Weapon("Sword", 10)
 
 
 # Electronic
-flashlight = Electronic("Flashlight",)
+flashlight = Electronic("Flashlight", None)
 tv = Electronic("Tv",)
-computer = Electronic("Computer",)
+computer = Electronic("Computer", None)
 
 
 # Household
