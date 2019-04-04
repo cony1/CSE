@@ -164,17 +164,13 @@ class Player(object):
         return globals()[name_of_room]
 
 
-NACHT_DER_UNTOTEN_ROOM_1 = Room("Nacht Der Untoten", 'VERUCKT_ROOM_2', 'SHI_NO_NUMA_ROOM_3', None, None, "You are in a"
-                                                                                                         "building, you"
-                                                                                                         " see an"
-                                                                                                         "envelope",
+NACHT_DER_UNTOTEN_ROOM_1 = Room("Nacht Der Untoten", 'VERUCKT_ROOM_2', 'SHI_NO_NUMA_ROOM_3', None, None,
+                                "You are in a building, you see an envelope",
                                 Envelope())
-VERUCKT_ROOM_2 = Room("Veruckt", 'ASCENSION_ROOM_5', 'MIDDLE_OF_A_RIFT_EX_ROOM_1', 'NACHT_DER_UNTOTEN_ROOM_1', None, "You are in a building"
-                                                                                                                     "with screams coming out of "
-                                                                                                                     "every corner of the room."
-                                                                                                                     "There are three weird looking portals"
-                                                                                                                     "One is heading North, and the other is heading East"
-                                                                                                                     "")
+VERUCKT_ROOM_2 = Room("Veruckt", 'ASCENSION_ROOM_5', 'MIDDLE_OF_A_RIFT_EX_ROOM_1', 'NACHT_DER_UNTOTEN_ROOM_1', None,
+                                "You are in a building with screams coming out of every corner of the room."
+                                "There are three weird looking portals"
+                                "One is heading North, and the other is heading East")
 MIDDLE_OF_A_RIFT_EX_ROOM_1 = Room("Middle Of A Rift", None, 'SHANGRILA_ROOM_6', 'SHI_NO_NUMA_ROOM_3', 'VERUCKT_ROOM_2')
 KINO_DER_TOTEN_ROOM_4 = Room("Kino Der Toten", None, None, None, 'SHI_NO_NUMA_ROOM_3')
 ASCENSION_ROOM_5 = Room("Ascension", 'TRANZIT_ROOM_9', None, 'VERUCKT_ROOM_2', None)
