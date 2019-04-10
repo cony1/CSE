@@ -58,17 +58,17 @@ class Electronic (Item):
 
 class Flashlight (Electronic):
     def __init__(self):
-        super(Flashlight, self).__init__("Flashlight",)
+        super(Flashlight, self).__init__("Flashlight", light=0)
 
 
 class Tv (Electronic):
     def __init__(self):
-        super(Tv, self).__init__("Tv",)
+        super(Tv, self).__init__("Tv", light=0)
 
 
 class Computer (Electronic):
     def __init__(self):
-        super(Computer, self).__init__("Computer",)
+        super(Computer, self).__init__("Computer", light=0)
 
 
 class Household (Item):
@@ -78,7 +78,7 @@ class Household (Item):
 
 class Watch (Household):
     def __init__(self):
-        super(Watch, self).name__init__("Watch",)
+        super(Watch, self).__init__("Watch",)
 
 
 class AlarmClock (Household):
@@ -130,6 +130,7 @@ class Character(object):
         if self.health >= 0:
             print("You have died!")
 
+
 class Room(object):
     def __init__(self, name, north, south, east, west, description, item):
         self.name = name
@@ -169,29 +170,37 @@ NACHT_DER_UNTOTEN_ROOM_1 = Room("Nacht Der Untoten", 'VERUCKT_ROOM_2', 'SHI_NO_N
                                 Envelope())
 VERUCKT_ROOM_2 = Room("Veruckt", 'ASCENSION_ROOM_5', 'MIDDLE_OF_A_RIFT_EX_ROOM_1', 'NACHT_DER_UNTOTEN_ROOM_1', None,
                                 "You are in a building with screams coming out of every corner of the room."
-                                "There are three weird looking portals"
+                                "There are three weird looking portals"                                    
                                 "One is heading North, and the other is heading East")
-MIDDLE_OF_A_RIFT_EX_ROOM_1 = Room("Middle Of A Rift", None, 'SHANGRILA_ROOM_6', 'SHI_NO_NUMA_ROOM_3', 'VERUCKT_ROOM_2', "You are felling very sick"
+MIDDLE_OF_A_RIFT_EX_ROOM_1 = Room("Middle Of A Rift", None, 'SHANGRILA_ROOM_6', 'SHI_NO_NUMA_ROOM_3',
+                                  'VERUCKT_ROOM_2', "You are felling very sick",
                        "There are weird lights from every corner of the room"
                        "You see tree ways to escape"
                        "One way is heading West, another way is East, and the other way is South."
-                       "You hear moneys and drums coming from the East",)
-KINO_DER_TOTEN_ROOM_4 = Room("Kino Der Toten", None, None, None, 'SHI_NO_NUMA_ROOM_3', "You are in a theater... you hear music and screams everywhere"
+                       "You hear moneys and drums coming from the East")
+KINO_DER_TOTEN_ROOM_4 = Room("Kino Der Toten", None, None, None, 'SHI_NO_NUMA_ROOM_3',
+                             "You are in a theater... you hear music and screams everywhere",
+
                        "There is only one weird portal"
-                       "It is heading West",)
-ASCENSION_ROOM_5 = Room("Ascension", 'TRANZIT_ROOM_9', None, 'VERUCKT_ROOM_2', None, "You are in a base")
-SHANGRILA_ROOM_6 = Room("Shangrila", 'MOON_ROOM_7', 'MIDDLE_OF_A_RIFT_EX_ROOM_1', None, None, "You are in a Jungle")
-MOON_ROOM_7 = Room("Moon", 'NUKETOWN_ROOM_8', None, 'SHANGRILA_ROOM_6', None, "You are on the moon")
-NUKETOWN_ROOM_8 = Room("Nuketown", 'ORIGINS_ROOM_10', None, None, 'TRANZIT_ROOM_9', "You are in nucktown")
-TRANZIT_ROOM_9 = Room("Tranzit", 'ORIGINS_ROOM_10', 'NUKETOWN_ROOM_8', None, None, "You see a bus.")
-ORIGINS_ROOM_10 = Room("Origins", 'MIDDLE_OF_A_RIFT_2_EX_ROOM_2', None, None, None, "You are in a nazi base")
-MIDDLE_OF_A_RIFT_2_EX_ROOM_2 = Room("Middle Of a Rift 2", None, 'DEAD_OF_THE_NIGHT_ROOM_11', None, 'BLOOD_OF_THE_DEAD_ROOM_12', "You are in the middle of a rift")
-DEAD_OF_THE_NIGHT_ROOM_11 = Room("Dead Of The Night", 'VOYAGE_OF_DESPAIR_ROOM_13', None, None, None, "You are in a huge house")
-BLOOD_OF_THE_DEAD_ROOM_12 = Room("Blood Of The Dead", 'VOYAGE_OF_DESPAIR_ROOM_13', None, None, None, "YOu are in an island")
-VOYAGE_OF_DESPAIR_ROOM_13 = Room("Voyage of Despair", 'IX_ROOM_14', None, None, None, "You are in the titanic")
-IX_ROOM_14 = Room("IX", None, 'CLASSIFIED_ROOM_15', None, None, "You are in the past")
-CLASSIFIED_ROOM_15 = Room("Classified", None, 'HOME_ROOM_16', None, None, "You are in the pentigon")
-HOME_ROOM_16 = Room("Home", None, None, None, None)
+                             
+                       "It is heading West")
+
+ASCENSION_ROOM_5 = Room("Ascension", 'TRANZIT_ROOM_9', None, 'VERUCKT_ROOM_2', None, "You are in a base", None)
+SHNGRLA_ROOM_6 = Room("Shangrila", 'MOON_ROOM_7', 'MIDDLE_OF_A_RIFT_EX_ROOM_1', None, None, "You are in a Jungle", None)
+MOON_ROOM_7 = Room("Moon", 'NUKETOWN_ROOM_8', None, 'SHANGRILA_ROOM_6', None, "You are on the moon", None)
+NUKETOWN_ROOM_8 = Room("Nuketown", 'ORIGINS_ROOM_10', None, None, 'TRANZIT_ROOM_9', "You are in ducktown", None)
+TRANZIT_ROOM_9 = Room("Tranzit", 'ORIGINS_ROOM_10', 'NUKETOWN_ROOM_8', None, None, "You see a bus.", None)
+ORIGINS_ROOM_10 = Room("Origins", 'MIDDLE_OF_A_RIFT_2_EX_ROOM_2', None, None, None, "You are in a nazi base", None)
+MIDDLE_OF_A_RIFT_2_EX_ROOM_2 = Room("Middle Of a Rift 2", None, 'DEAD_OF_THE_NIGHT_ROOM_11', None,
+                                    'BLOOD_OF_THE_DEAD_ROOM_12', "You are in the middle of a rift", None)
+DEAD_OF_THE_NIGHT_ROOM_11 = Room("Dead Of The Night", 'VOYAGE_OF_DESPAIR_ROOM_13', None, None, None,
+                                 "You are in a huge house", None)
+BLOOD_OF_THE_DEAD_ROOM_12 = Room("Blood Of The Dead", 'VOYAGE_OF_DESPAIR_ROOM_13', None, None, None,
+                                 "YOu are in an island", None)
+VOYAGE_OF_DESPAIR_ROOM_13 = Room("Voyage of Despair", 'IX_ROOM_14', None, None, None, "You are in the titanic", None)
+IX_ROOM_14 = Room("IX", None, 'CLASSIFIED_ROOM_15', None, None, "You are in the past", None)
+CLASSIFIED_ROOM_15 = Room("Classified", None, 'HOME_ROOM_16', None, None, "You are in the pentigon",
+HOME_ROOM_16 = Room("Home", None, None, None, None):
 
 
 # Armor
@@ -214,12 +223,15 @@ computer = Electronic("Computer", None)
 
 
 # Household
-watch = Household("Watch",)
-alarmclock = Household("Alarmclock",)
-key = Household("Key",)
-envelope = Household("Envelope",)
+watch = Household("Watch",);
+alarmclock = Household("Alarmclock",);
+key = Household("Key",);
+envelope = Household("Envelope",);
 
 
 # Consumable
 pizza = Consumable("Pizza", 10)
 
+short_directions = ['n', 's', 'e', 'w', 'u', 'd']
+
+    if command.lower( 
