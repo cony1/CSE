@@ -234,4 +234,4 @@ pizza = Consumable("Pizza", 10)
 
 short_directions = ['n', 's', 'e', 'w', 'u', 'd']
 
-    if command.lower( 
+    if command.lower
