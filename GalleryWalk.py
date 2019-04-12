@@ -169,38 +169,40 @@ NACHT_DER_UNTOTEN_ROOM_1 = Room("Nacht Der Untoten", 'VERUCKT_ROOM_2', 'SHI_NO_N
                                 "You are in a building, you see an envelope",
                                 Envelope())
 VERUCKT_ROOM_2 = Room("Veruckt", 'ASCENSION_ROOM_5', 'MIDDLE_OF_A_RIFT_EX_ROOM_1', 'NACHT_DER_UNTOTEN_ROOM_1', None,
-                                "You are in a building with screams coming out of every corner of the room."
+                                ""
+                                "You are in a building "
+                                "with screams coming out "
+                                "of every corner of the room."
                                 "There are three weird looking portals"                                    
-                                "One is heading North, and the other is heading East")
+                                "One is heading North, and the other is heading East", Boots())
 MIDDLE_OF_A_RIFT_EX_ROOM_1 = Room("Middle Of A Rift", None, 'SHANGRILA_ROOM_6', 'SHI_NO_NUMA_ROOM_3',
-                                  'VERUCKT_ROOM_2', "You are felling very sick",
+                                  'VERUCKT_ROOM_2', "You are felling very sick"
                        "There are weird lights from every corner of the room"
                        "You see tree ways to escape"
                        "One way is heading West, another way is East, and the other way is South."
-                       "You hear moneys and drums coming from the East")
+                       "You hear moneys and drums coming from the East", AlarmClock())
 KINO_DER_TOTEN_ROOM_4 = Room("Kino Der Toten", None, None, None, 'SHI_NO_NUMA_ROOM_3',
-                             "You are in a theater... you hear music and screams everywhere",
-
+                             "You are in a theater... you hear music and screams everywhere"
                        "There is only one weird portal"
                              
-                       "It is heading West")
-
-ASCENSION_ROOM_5 = Room("Ascension", 'TRANZIT_ROOM_9', None, 'VERUCKT_ROOM_2', None, "You are in a base", None)
-SHNGRLA_ROOM_6 = Room("Shangrila", 'MOON_ROOM_7', 'MIDDLE_OF_A_RIFT_EX_ROOM_1', None, None, "You are in a Jungle", None)
-MOON_ROOM_7 = Room("Moon", 'NUKETOWN_ROOM_8', None, 'SHANGRILA_ROOM_6', None, "You are on the moon", None)
-NUKETOWN_ROOM_8 = Room("Nuketown", 'ORIGINS_ROOM_10', None, None, 'TRANZIT_ROOM_9', "You are in ducktown", None)
-TRANZIT_ROOM_9 = Room("Tranzit", 'ORIGINS_ROOM_10', 'NUKETOWN_ROOM_8', None, None, "You see a bus.", None)
-ORIGINS_ROOM_10 = Room("Origins", 'MIDDLE_OF_A_RIFT_2_EX_ROOM_2', None, None, None, "You are in a nazi base", None)
+                       "It is heading West", KitchenKnife())
+ASCENSION_ROOM_5 = Room("Ascension", 'TRANZIT_ROOM_9', None, 'VERUCKT_ROOM_2', None, "You are in a base", Watch())
+SHNGRLA_ROOM_6 = Room("Shangrila", 'MOON_ROOM_7', 'MIDDLE_OF_A_RIFT_EX_ROOM_1', None, None, "You are in a Jungle",
+                      Leggings())
+MOON_ROOM_7 = Room("Moon", 'NUKETOWN_ROOM_8', None, 'SHANGRILA_ROOM_6', None, "You are on the moon", Computer())
+NUKETOWN_ROOM_8 = Room("Nuketown", 'ORIGINS_ROOM_10', None, None, 'TRANZIT_ROOM_9', "You are in nuketown", ChestPlate())
+TRANZIT_ROOM_9 = Room("Tranzit", 'ORIGINS_ROOM_10', 'NUKETOWN_ROOM_8', None, None, "You see a bus.", Key())
+ORIGINS_ROOM_10 = Room("Origins", 'MIDDLE_OF_A_RIFT_2_EX_ROOM_2', None, None, None, "You are in a nazi base", Pizza())
 MIDDLE_OF_A_RIFT_2_EX_ROOM_2 = Room("Middle Of a Rift 2", None, 'DEAD_OF_THE_NIGHT_ROOM_11', None,
                                     'BLOOD_OF_THE_DEAD_ROOM_12', "You are in the middle of a rift", None)
 DEAD_OF_THE_NIGHT_ROOM_11 = Room("Dead Of The Night", 'VOYAGE_OF_DESPAIR_ROOM_13', None, None, None,
-                                 "You are in a huge house", None)
+                                 "You are in a huge house", Sword())
 BLOOD_OF_THE_DEAD_ROOM_12 = Room("Blood Of The Dead", 'VOYAGE_OF_DESPAIR_ROOM_13', None, None, None,
-                                 "YOu are in an island", None)
-VOYAGE_OF_DESPAIR_ROOM_13 = Room("Voyage of Despair", 'IX_ROOM_14', None, None, None, "You are in the titanic", None)
-IX_ROOM_14 = Room("IX", None, 'CLASSIFIED_ROOM_15', None, None, "You are in the past", None)
-CLASSIFIED_ROOM_15 = Room("Classified", None, 'HOME_ROOM_16', None, None, "You are in the pentigon",
-HOME_ROOM_16 = Room("Home", None, None, None, None):
+                                 "You are in an island", Crossbow())
+VOYAGE_OF_DESPAIR_ROOM_13 = Room("Voyage of Despair", 'IX_ROOM_14', None, None, None, "You are in the titanic", Gun())
+IX_ROOM_14 = Room("IX", None, 'CLASSIFIED_ROOM_15', None, None, "You are in the past", Flashlight)
+CLASSIFIED_ROOM_15 = Room("Classified", None, 'HOME_ROOM_16', None, None, "You are in the pentagon", Tv())
+HOME_ROOM_16 = Room("Home", None, None, None, None, None, None)
 
 
 # Armor
@@ -218,20 +220,47 @@ sword = Weapon("Sword", 10)
 
 # Electronic
 flashlight = Electronic("Flashlight", None)
-tv = Electronic("Tv",)
+tv = Electronic("Tv", None)
 computer = Electronic("Computer", None)
 
 
 # Household
-watch = Household("Watch",);
-alarmclock = Household("Alarmclock",);
-key = Household("Key",);
-envelope = Household("Envelope",);
+watch = Household("Watch",)
+alarmclock = Household("Alarmclock",)
+key = Household("Key",)
+envelope = Household("Envelope", )
 
 
 # Consumable
-pizza = Consumable("Pizza", 10)
+pizza = Consumable("Pizza")
 
-short_directions = ['n', 's', 'e', 'w', 'u', 'd']
 
-    if command.lower
+short_directions = ['n', 'e', 's', 'w', 'u', 'd']
+
+
+
+playing = True
+current_node = ['NACHT_DER_UNTOTEN_ROOM_1']
+directions = ['NORTH', 'EAST', 'SOUTH', 'WEST', 'UP', 'DOWN']
+
+while playing:
+    print(current_node['NAME'])
+    print(current_node['DESCRIPTION'])
+    command = input(">_")
+    if command.lower() in ['q', 'quit', 'exit']:
+        playing = False
+
+    if command.lower()in short_directions:
+        pos = short_directions.index(command.lower())
+        command = directions[pos]
+
+    elif command.upper in directions:
+        try:
+            room_name = current_node['PATHS'][command.upper()]
+            current_node = world_map[room_name]
+        except KeyError:
+            print("I can't go that way")
+        except AttributeError:
+            pass
+    else:
+        print("Command Not Found")
