@@ -238,14 +238,13 @@ pizza = Consumable("Pizza")
 short_directions = ['n', 'e', 's', 'w', 'u', 'd']
 
 
-
 playing = True
-current_node = ['NACHT_DER_UNTOTEN_ROOM_1']
+player = Player(NACHT_DER_UNTOTEN_ROOM_1)
 directions = ['NORTH', 'EAST', 'SOUTH', 'WEST', 'UP', 'DOWN']
 
 while playing:
-    print(current_node['NAME'])
-    print(current_node['DESCRIPTION'])
+    print(player.current_location.name)
+    print(player.current_location.description)
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
