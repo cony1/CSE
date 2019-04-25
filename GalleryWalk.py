@@ -253,10 +253,10 @@ while playing:
         pos = short_directions.index(command.lower())
         command = directions[pos]
 
-    elif command.upper in directions:
+    elif command.lower() in directions:
         try:
-            room_name = current_node['PATHS'][command.upper()]
-            current_node = world_map[room_name]
+            next_room = player.find_next_room(command)
+            player.move(next_room)
         except KeyError:
             print("I can't go that way")
         except AttributeError:
