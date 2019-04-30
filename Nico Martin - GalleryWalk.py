@@ -4,7 +4,7 @@ class Item(object):
 
 
 class Armor(Item):
-    def __init__(self, name, protection,):
+    def __init__(self, name, protection, ):
         super(Armor, self).__init__(name)
         self.protection = protection
 
@@ -14,12 +14,12 @@ class ChestPlate(Armor):
         super(ChestPlate, self).__init__("Bronze Chest Plate, Protection-10", 10)
 
 
-class Leggings (Armor):
+class Leggings(Armor):
     def __init__(self):
         super(Leggings, self).__init__("Bronze Leggings, Protection - 10", 10)
 
 
-class Boots (Armor):
+class Boots(Armor):
     def __init__(self):
         super(Boots, self).__init__("Bronze Boots, Protection - 10", 10)
 
@@ -30,78 +30,78 @@ class Weapon(Item):
         self.attack = attack
 
 
-class Gun (Weapon):
+class Gun(Weapon):
     def __init__(self):
         super(Gun, self).__init__("Bronze Handgun, Attack Damage - 10", 10)
 
 
-class Crossbow (Weapon):
+class Crossbow(Weapon):
     def __init__(self):
         super(Crossbow, self).__init__("Bronze Crossbow, Attack Damage - 10", 10)
 
 
-class KitchenKnife (Weapon):
+class KitchenKnife(Weapon):
     def __init__(self):
         super(KitchenKnife, self).__init__("Bronze Kitchen Knife, Attack Damage- 10", 10)
 
 
-class Sword (Weapon):
+class Sword(Weapon):
     def __init__(self):
         super(Sword, self).__init__("Bronze Sword, Attack Damage - 10", 10)
 
 
-class Electronic (Item):
+class Electronic(Item):
     def __init__(self, name, light):
         super(Electronic, self).__init__(name)
         self.light = light
 
 
-class Flashlight (Electronic):
+class Flashlight(Electronic):
     def __init__(self):
         super(Flashlight, self).__init__("Flashlight", light=0)
 
 
-class Tv (Electronic):
+class Tv(Electronic):
     def __init__(self):
         super(Tv, self).__init__("Tv", light=0)
 
 
-class Computer (Electronic):
+class Computer(Electronic):
     def __init__(self):
         super(Computer, self).__init__("Computer", light=0)
 
 
-class Household (Item):
+class Household(Item):
     def __init__(self, name):
         super(Household, self).__init__(name)
 
 
-class Watch (Household):
+class Watch(Household):
     def __init__(self):
-        super(Watch, self).__init__("Watch",)
+        super(Watch, self).__init__("Watch", )
 
 
-class AlarmClock (Household):
+class AlarmClock(Household):
     def __init__(self):
-        super(AlarmClock, self).__init__("Alarm Clock",)
+        super(AlarmClock, self).__init__("Alarm Clock", )
 
 
-class Key (Household):
+class Key(Household):
     def __init__(self):
-        super(Key, self).__init__("Key",)
+        super(Key, self).__init__("Key", )
 
 
-class Envelope (Household):
+class Envelope(Household):
     def __init__(self):
-        super(Envelope, self).__init__("Envelope",)
+        super(Envelope, self).__init__("Envelope", )
 
 
-class Consumable (Item):
+class Consumable(Item):
     def __init__(self, name):
         super(Consumable, self).__init__(name)
 
 
-class Pizza (Consumable):
+class Pizza(Consumable):
     def __init__(self):
         super(Pizza, self).__init__("Pizza")
 
@@ -124,7 +124,7 @@ class Character(object):
         print("%d has %d heal left" % (self.name, self.health))
 
     def attack(self, target):
-        print("%s attacks %s  for %d damage" % (self.name, target.name, self.weapon. damage))
+        print("%s attacks %s  for %d damage" % (self.name, target.name, self.weapon.damage))
 
     def death(self):
         if self.health >= 0:
@@ -169,23 +169,23 @@ NACHT_DER_UNTOTEN_ROOM_1 = Room("Nacht Der Untoten", 'VERUCKT_ROOM_2', 'SHI_NO_N
                                 "You are in a building, you see an envelope",
                                 Envelope())
 VERUCKT_ROOM_2 = Room("Veruckt", 'ASCENSION_ROOM_5', 'MIDDLE_OF_A_RIFT_EX_ROOM_1', 'NACHT_DER_UNTOTEN_ROOM_1', None,
-                                ""
-                                "You are in a building "
-                                "with screams coming out "
-                                "of every corner of the room."
-                                "There are three weird looking portals"                                    
-                                "One is heading North, and the other is heading East", Boots())
+                      ""
+                      "You are in a building "
+                      "with screams coming out "
+                      "of every corner of the room."
+                      "There are three weird looking portals"
+                      "One is heading North, and the other is heading East", Boots())
 MIDDLE_OF_A_RIFT_EX_ROOM_1 = Room("Middle Of A Rift", None, 'SHANGRILA_ROOM_6', 'SHI_NO_NUMA_ROOM_3',
                                   'VERUCKT_ROOM_2', "You are felling very sick"
-                       "There are weird lights from every corner of the room"
-                       "You see tree ways to escape"
-                       "One way is heading West, another way is East, and the other way is South."
-                       "You hear moneys and drums coming from the East", AlarmClock())
+                                                    "There are weird lights from every corner of the room"
+                                                    "You see tree ways to escape"
+                                                    "One way is heading West, another way is East, and the other way is South."
+                                                    "You hear moneys and drums coming from the East", AlarmClock())
 KINO_DER_TOTEN_ROOM_4 = Room("Kino Der Toten", None, None, None, 'SHI_NO_NUMA_ROOM_3',
                              "You are in a theater... you hear music and screams everywhere"
-                       "There is only one weird portal"
-                             
-                       "It is heading West", KitchenKnife())
+                             "There is only one weird portal"
+
+                             "It is heading West", KitchenKnife())
 ASCENSION_ROOM_5 = Room("Ascension", 'TRANZIT_ROOM_9', None, 'VERUCKT_ROOM_2', None, "You are in a base", Watch())
 SHNGRLA_ROOM_6 = Room("Shangrila", 'MOON_ROOM_7', 'MIDDLE_OF_A_RIFT_EX_ROOM_1', None, None, "You are in a Jungle",
                       Leggings())
@@ -204,12 +204,10 @@ IX_ROOM_14 = Room("IX", None, 'CLASSIFIED_ROOM_15', None, None, "You are in the 
 CLASSIFIED_ROOM_15 = Room("Classified", None, 'HOME_ROOM_16', None, None, "You are in the pentagon", Tv())
 HOME_ROOM_16 = Room("Home", None, None, None, None, None, None)
 
-
 # Armor
 chestplate = Armor("Chest Plate", 10)
 leggings = Armor("Leggings", 10)
 boots = Armor("Boots", 10)
-
 
 # Weapons
 gun = Weapon("Gun", 10)
@@ -217,26 +215,21 @@ crossbow = Weapon("Crossbow", 10)
 kitchenknife = Weapon("KitchenKnife", 10)
 sword = Weapon("Sword", 10)
 
-
 # Electronic
 flashlight = Electronic("Flashlight", None)
 tv = Electronic("Tv", None)
 computer = Electronic("Computer", None)
 
-
 # Household
-watch = Household("Watch",)
-alarmclock = Household("Alarmclock",)
-key = Household("Key",)
+watch = Household("Watch", )
+alarmclock = Household("Alarmclock", )
+key = Household("Key", )
 envelope = Household("Envelope", )
-
 
 # Consumable
 pizza = Consumable("Pizza")
 
-
 short_directions = ['n', 'e', 's', 'w', 'u', 'd']
-
 
 playing = True
 player = Player(NACHT_DER_UNTOTEN_ROOM_1)
@@ -249,7 +242,7 @@ while playing:
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
 
-    if command.lower()in short_directions:
+    if command.lower() in short_directions:
         pos = short_directions.index(command.lower())
         command = directions[pos]
 
@@ -263,3 +256,4 @@ while playing:
             pass
     else:
         print("Command Not Found")
+

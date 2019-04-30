@@ -45,6 +45,22 @@ def all_16_digits(num: str):
 
 
 
+def reverse_(string):
+    print(string[::-1])
+
+
+
+reverse_it("Hello World")
+
+
+
+
+def reverse(s):
+  str = ""
+  for i in s:
+    str = i + str
+  return str
+
 
 
 
@@ -60,3 +76,15 @@ with open("Book1.csv") as old_csv:
              if validate(old_number):
                  writer.writerow(row)
       print("Done")
+
+
+
+def valid_card_number(num: str):
+
+
+print(valid_card_number("1947333886071750"))
+
+
+
+for index in range(len(number)):
+    list_num[index] = list_num[index]
