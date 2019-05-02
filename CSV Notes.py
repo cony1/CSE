@@ -88,3 +88,4 @@ print(valid_card_number("1947333886071750"))
 
 for index in range(len(number)):
     list_num[index] = list_num[index]
+
