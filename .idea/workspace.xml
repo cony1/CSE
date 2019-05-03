@@ -50,20 +50,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Nico Martin - Validator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSV Notes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="459">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -72,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/Nico Martin - GalleryWalk.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4403">
-              <caret line="259" lean-forward="true" selection-start-line="259" selection-end-line="259" />
+              <caret line="259" selection-start-line="259" selection-end-line="259" />
             </state>
           </provider>
         </entry>
@@ -163,8 +163,8 @@
         <option value="$PROJECT_DIR$/Still Working On My Game.py" />
         <option value="$PROJECT_DIR$/GalleryWalk.py" />
         <option value="$PROJECT_DIR$/Nico Martin - GalleryWalk.py" />
-        <option value="$PROJECT_DIR$/CSV Notes.py" />
         <option value="$PROJECT_DIR$/Nico Martin - Validator.py" />
+        <option value="$PROJECT_DIR$/CSV Notes.py" />
       </list>
     </option>
   </component>
@@ -178,6 +178,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,7 +195,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,12 +367,13 @@
       <updated>1546882735494</updated>
       <workItem from="1556294291689" duration="2998000" />
       <workItem from="1556635863262" duration="6757000" />
-      <workItem from="1556808545994" duration="5511000" />
+      <workItem from="1556808545994" duration="5661000" />
+      <workItem from="1556902461955" duration="2737000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15266000" />
+    <option name="totallyTimeSpent" value="18153000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -387,8 +388,8 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46912244" visible="true" weight="0.19083156" />
-      <window_info id="Structure" order="1" sideWeight="0.5308776" side_tool="true" visible="true" weight="0.19083156" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.468039" visible="true" weight="0.19296375" />
+      <window_info id="Structure" order="1" sideWeight="0.531961" side_tool="true" visible="true" weight="0.19296375" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33152762" />
@@ -515,7 +516,7 @@
     <entry file="file://$PROJECT_DIR$/Nico Martin - GalleryWalk.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4403">
-          <caret line="259" lean-forward="true" selection-start-line="259" selection-end-line="259" />
+          <caret line="259" selection-start-line="259" selection-end-line="259" />
         </state>
       </provider>
     </entry>
@@ -557,17 +558,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nico Martin - Validator.py">
+    <entry file="file://$PROJECT_DIR$/CSV Notes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="459">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSV Notes.py">
+    <entry file="file://$PROJECT_DIR$/Nico Martin - Validator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
