@@ -1,10 +1,5 @@
 import csv
 
-def valid_card_number(num: str):
-
-
-print(valid_card_number("1947333886071750"))
-
 with open("Book1.csv") as old_csv:
     with open("MyNewFile.csv", 'w', newline='') as new_csv:
         reader = csv.reader(old_csv)
@@ -18,6 +13,10 @@ with open("Book1.csv") as old_csv:
             writer.writerow(row)
     print("Done")
 
-print(valid_card_number("1947333886071750"))
+def valid_card_number(num: str):
+    remove_last_digit(num)
 
-if valid_card_number()
+
+def remove_last_digit():
+
+print(valid_card_number("1947333886071750"))
