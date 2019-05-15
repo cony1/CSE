@@ -5,6 +5,7 @@ def validate(num: str):
         return True
     return False
 
+
 def validate(num: str):
     first_num = int(num[0])
     if first_num % 3 ==0:
