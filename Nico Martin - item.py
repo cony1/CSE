@@ -30,7 +30,7 @@ class Weapon(Item):
         self.attack = attack
 
 
-class Gun (Weapon):
+class Gun1 (Weapon):
     def __init__(self):
         super(Gun1, self).__init__("Bronze Handgun, Attack Damage - 10", 10)
 
@@ -51,59 +51,61 @@ class Sword (Weapon):
 
 
 class Electronic (Item):
-    def __init__(self, name, light):
+    def __init__(self, name, battery):
         super(Electronic, self).__init__(name)
-        self.light = light
+        self.battery = battery
 
 
 class Flashlight (Electronic):
     def __init__(self):
-        super(Flashlight, self).__init__("Flashlight",)
+        super(Flashlight, self).__init__("Flashlight", 50)
 
 
 class Tv (Electronic):
     def __init__(self):
-        super(Tv, self).__init__("Tv",)
+        super(Tv, self).__init__("Tv", 100)
 
 
 class Computer (Electronic):
     def __init__(self):
-        super(Computer, self).__init__("Computer",)
+        super(Computer, self).__init__("Computer", 30)
 
 
 class Household (Item):
-    def __init__(self, name):
+    def __init__(self, name, usage):
         super(Household, self).__init__(name)
+        self.usage = usage
 
 
 class Watch (Household):
     def __init__(self):
-        super(Watch, self).name__init__("Watch",)
+        super(Watch, self).__init__("Watch", 3)
 
 
 class AlarmClock (Household):
     def __init__(self):
-        super(AlarmClock, self).__init__("Alarm Clock",)
+        super(AlarmClock, self).__init__("Alarm Clock", 5)
 
 
 class Key (Household):
     def __init__(self):
-        super(Key, self).__init__("Key",)
+        super(Key, self).__init__("Key", 5)
 
 
 class Envelope (Household):
     def __init__(self):
-        super(Envelope, self).__init__("Envelope",)
+        super(Envelope, self).__init__("Envelope", 1)
 
 
 class Consumable (Item):
-    def __init__(self, name):
+    def __init__(self, name, health):
         super(Consumable, self).__init__(name)
+        self.health = health
 
 
 class Pizza (Consumable):
     def __init__(self):
-        super(Pizza, self).__init__("Pizza")
+        super(Pizza, self).__init__("Pizza", 25)
 
 
 class Character(object):
@@ -130,5 +132,3 @@ class Character(object):
         if self.health >= 0:
             print("You have died!")
 
-
-# Items

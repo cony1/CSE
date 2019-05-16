@@ -49,7 +49,7 @@ def all_16_digits(num: str):
 def reverse_(string):
     print(string[::-1])
 
-
+`
 
 reverse_it("Hello World")
 
