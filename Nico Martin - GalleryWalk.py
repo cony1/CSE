@@ -175,11 +175,18 @@ VERUCKT_ROOM_2 = Room("Veruckt", 'ASCENSION_ROOM_5', 'MIDDLE_OF_A_RIFT_EX_ROOM_1
                       "of every corner of the room."
                       "There are three weird looking portals"
                       "One is heading North, and the other is heading East", Boots())
+SHI_NO_NUMA_ROOM_3 = Room("Shi No Numa", None, 'KINO_DER_TOTEN_ROOM_4', None, 'NACHT_DER_UNTOTEN_ROOM_1',
+                                               "You are in a swamp with"
+                                               "screams coming out"
+                                               "of every corner of the room"
+                                               "There are two weird looking portals"
+                                               "One is heading West, and the other is heading East.", Leggings())
 MIDDLE_OF_A_RIFT_EX_ROOM_1 = Room("Middle Of A Rift", None, 'SHANGRILA_ROOM_6', 'SHI_NO_NUMA_ROOM_3',
                                   'VERUCKT_ROOM_2', "You are felling very sick"
                                                     "There are weird lights from every corner of the room"
                                                     "You see tree ways to escape"
-                                                    "One way is heading West, another way is East, and the other way is South."
+                                                    "One way is heading West, another way is East, "
+                                                    "and the other way is South."
                                                     "You hear moneys and drums coming from the East", AlarmClock())
 KINO_DER_TOTEN_ROOM_4 = Room("Kino Der Toten", None, None, None, 'SHI_NO_NUMA_ROOM_3',
                              "You are in a theater... you hear music and screams everywhere"
@@ -233,7 +240,7 @@ short_directions = ['n', 'e', 's', 'w', 'u', 'd']
 
 playing = True
 player = Player(NACHT_DER_UNTOTEN_ROOM_1)
-directions = ['NORTH', 'EAST', 'SOUTH', 'WEST', 'UP', 'DOWN']
+directions = ['north', 'east', 'south', 'west', 'up', 'down']
 
 while playing:
     print(player.current_location.name)
@@ -246,7 +253,7 @@ while playing:
         pos = short_directions.index(command.lower())
         command = directions[pos]
 
-    elif command.lower() in directions:
+    if command.lower() in directions:
         try:
             next_room = player.find_next_room(command)
             player.move(next_room)
